@@ -1,0 +1,68 @@
+Example = {
+   title: tstr,
+   ? description: tstr,
+   input: Inputs,
+   output: Outputs
+}
+
+Inputs = {
+   plaintext: bstr / tstr,
+   ? detached: bool,
+   (encrypt: Encrypt) / (mac: Mac) / (sign: Sign),
+   ? rng_stream: bstr
+}
+
+Sign = {
+  signers: [+ Signers]
+}
+
+headers = (
+   ? protected: { (tstr/int) => any },
+   ? unprotected: { (tstr/int) => any }
+}
+
+Signers = {
+  alg: tstr,
+  key: Key,
+  headers
+}
+
+Mac = {
+  alg: tstr,
+  headers,
+  aad: {
+      inMessage: bstr,
+      oob : bstr
+  }A
+  recipients: [+ Recipients]
+}
+
+Encrypt = {
+    alg: tstr,
+    headers,
+    aad: {
+        inMessage: bstr,
+        oob : bstr
+    },
+    recipients: [+ Recipients]
+}
+
+Recipient = {
+   alg: tstr,
+   headers,
+   key: Key,
+   ? sender_key: Key
+}
+
+Key = {
+  (tstr/int) => *
+}
+
+Outputs = {
+   ? compact: bstr,
+   ? json: tstr,
+   ? json_flat: tstr
+   ? cbor: bstr,
+   ? cbor_flat: bstr
+}
+
