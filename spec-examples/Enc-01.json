@@ -1,0 +1,45 @@
+{
+    "title": "Encryption example for spec - Direct ECDH",
+    "input": {
+        "plaintext": "This is the content.",
+        "encrypt": {
+            "alg": "A128GCM",
+            "protected": {
+                "alg": "A128GCM"
+            },
+            "recipients": [
+                {
+                    "alg": "ECDH-ES",
+                    "key": {
+                        "kty": "EC",
+                        "kid": "meriadoc.brandybuck@buckland.example",
+                        "crv": "P-256",
+                        "x": "Ze2loSV3wrroKUN_4zhwGhCqo3Xhu1td4QjeQ5wIVR0",
+                        "y": "HlLtdXARY_f55A3fnzQbPcm6hgr34Mp8p-nuzQCE0Zw",
+                        "d": "r_kHyZ-a06rmxM3yESK84r1otSg-aQcVStkRhA-iCM8"
+                    },
+                    "unprotected": {
+                        "alg": "ECDH-ES",
+                        "kid": "meriadoc.brandybuck@buckland.example",
+                        "epk": {
+                            "kty": "EC",
+                            "crv": "P-256",
+                            "x": "mPUKT_bAWGHIhg0TpjjqVsP1rXWQu_vwVOHHtNkdYoA",
+                            "y": "8BQAsImGeAS46fyWw5MhYfGTT0IjBpFw2SS34Dv4Irs"
+                        }
+                    }
+                }
+            ]
+        },
+        "rng_stream": [
+            "02D1F7E6F26C43D4868D87CEB2353161740AACF1F7163647984B522A848DF1C3",
+            "C9CF4DF2FE6C632BF7886413F76E8852"
+        ]
+    },
+    "generated": {
+        "iv": "yc9N8v5sYyv3iGQT926IUg"
+    },
+    "output": {
+        "cbor_diag": "{1: 2, 2: h'A10101', 7: h'C9CF4DF2FE6C632BF7886413', 4: h'45FCE2814311024D3A479E7D3EED063850F3F0B94EE043BAFDFA14636E632CF675AF2DAE', 9: [{3: {1: \"ECDH-ES\", 5: \"meriadoc.brandybuck@buckland.example\", \"epk\": {\"kty\": \"EC\", \"crv\": \"P-256\", \"x\": h'98F50A4FF6C05861C8860D13A638EA56C3F5AD7590BBFBF054E1C7B4D91D6280', \"y\": h'F01400B089867804B8E9FC96C3932161F1934F4223069170D924B7E03BF822BB'}}}]}"
+    }
+}
