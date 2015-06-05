@@ -12,7 +12,7 @@
             "protected": {
                 "alg": "A256GCM"
             },
-            "recipients":[
+            "recipients": [
                 {
                     "alg": "RSA-OAEP",
                     "unprotected": {

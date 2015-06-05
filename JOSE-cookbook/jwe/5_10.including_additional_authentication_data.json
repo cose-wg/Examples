@@ -10,6 +10,9 @@
                 "kid": "81b20965-8332-43d9-a468-82160ad91ac8",
                 "enc": "A128GCM"
             },
+            "protected": {
+                "alg": "A128GCM"
+            },
             "recipients": [
                 {
                     "alg": "A128KW",
@@ -19,6 +22,10 @@
                         "use": "enc",
                         "alg": "A128KW",
                         "k": "GZy6sIZ6wl9NJOKB-jnmVQ"
+                    },
+                    "unprotected": {
+                        "alg": "A128KW",
+                        "kid": "81b20965-8332-43d9-a468-82160ad91ac8"
                     }
                 }
             ],
