@@ -1,0 +1,35 @@
+{
+    "title":"Encryption example for spec - Direct ECDH",
+    "input":{
+        "plaintext":"This is the content.",
+        "encrypt":{
+            "alg":"AES-CCM-128/64",
+            "protected":{
+                "alg":"AES-CCM-128/64"
+            },
+            "recipients":[
+                {
+                    "alg":"dir+kdf",
+                    "key":{
+                        "kty":"oct",
+                        "kid":"our-secret",
+                        "use":"enc",
+                        "k":"hJtXIZ2uSN5kbQfbtTNWbpdmhkV8FJG-Onbc6mxCcYg"
+                    },
+                    "unprotected":{
+                        "alg":"dir+kdf",
+                        "kid":"our-secret",
+                        "salt": "aabbccddeeffgghh"
+                    },
+                    "unsent":{
+                        "apu_id": "lighting-client",
+                        "apv_id": "lighting-server",
+                        "supp_pub_other": "Encryption example 02"
+                    }
+                }
+            ]
+        }
+    },
+    "output":{
+    }
+}
