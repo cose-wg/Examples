@@ -1,0 +1,38 @@
+{
+   "title":"Encryption example for spec - Direct ECDH",
+   "input":{
+     "plaintext":"This is the content.",
+     "encrypt":{
+       "alg":"AES-CCM-16-128/64",
+       "protected":{
+         "alg":"AES-CCM-16-128/64"
+       },
+       "recipients":[
+         {
+           "alg":"dir+kdf",
+           "key":{
+             "kty":"oct",
+             "kid":"our-secret",
+             "use":"enc",
+             "k":"hJtXIZ2uSN5kbQfbtTNWbpdmhkV8FJG-Onbc6mxCcYg"
+           },
+           "unprotected":{
+             "alg":"dir+kdf",
+             "kid":"our-secret",
+             "salt":"aabbccddeeffgghh"
+           },
+           "unsent":{
+             "apu_id":"lighting-client",
+             "apv_id":"lighting-server",
+             "supp_pub_other":"Encryption example 02"
+           }
+         }
+       ]
+     },
+     "rng_stream":"89F52F65A1C580933B5261A7"
+   },
+   "output":{
+     "cbor_diag":"{1: 2, 2: h'A1010A', 3: {5: h'89F52F65A1C580933B5261A7'}, 4: h'7B9DCFA42C4E1D3182C402DC18EF8B5637DE4FB62CF1DD156EA6E6E0', 9: [{3: {1: \"dir+kdf\", 4: h'6F75722D736563726574', -20: h'61616262636364646565666667676868'}}]}",
+     "cbor":"A501020243A1010A03A1054C89F52F65A1C580933B5261A704581C7B9DCFA42C4E1D3182C402DC18EF8B5637DE4FB62CF1DD156EA6E6E00981A103A301676469722B6B6466044A6F75722D736563726574335061616262636364646565666667676868"
+   }
+ }
