@@ -1,0 +1,66 @@
+{
+   "title":"Encryption example for spec - Direct ECDH",
+   "input":{
+     "plaintext":"This is the content.",
+     "encrypt":{
+       "alg":"A128GCM",
+       "protected":{
+         "alg":"A128GCM"
+       },
+         "countersign": {
+             "signers": [
+                 {
+                     "alg":"ES512",
+                     "key":{
+                         "kty":"EC",
+                         "kid":"bilbo.baggins@hobbiton.example",
+                         "use":"sig",
+                         "crv":"P-521",
+                         "x":"AHKZLLOsCOzz5cY97ewNUajB957y-C-U88c3v13nmGZx6sYl_oJXu9A5RkTKqjqvjyekWF-7ytDyRXYgCF5cj0Kt",
+                         "y":"AdymlHvOiLxXkEhayXQnNCvDX4h9htZaCJN34kfmC6pV5OhQHiraVySsUdaQkAgDPrwQrJmbnX9cwlGfP-HqHZR1",
+                         "d":"AAhRON2r9cqXX1hg-RoI6R1tX5p2rUAYdmpHZoC1XNM56KtscrX6zbKipQrCW9CGZH3T4ubpnoTKLDYJ_fF3_rJt"
+                     },
+                     "unprotected":{
+                         "alg":"ES512",
+                         "kid":"bilbo.baggins@hobbiton.example"
+                     }
+                 }
+             ]
+         },
+       "recipients":[
+         {
+           "alg":"ECDH-ES",
+           "key":{
+             "kty":"EC",
+             "kid":"meriadoc.brandybuck@buckland.example",
+             "crv":"P-256",
+             "x":"Ze2loSV3wrroKUN_4zhwGhCqo3Xhu1td4QjeQ5wIVR0",
+             "y":"HlLtdXARY_f55A3fnzQbPcm6hgr34Mp8p-nuzQCE0Zw",
+             "d":"r_kHyZ-a06rmxM3yESK84r1otSg-aQcVStkRhA-iCM8"
+           },
+           "unprotected":{
+             "alg":"ECDH-ES",
+             "kid":"meriadoc.brandybuck@buckland.example",
+             "epk":{
+               "kty":"EC",
+               "crv":"P-256",
+               "x":"mPUKT_bAWGHIhg0TpjjqVsP1rXWQu_vwVOHHtNkdYoA",
+               "y":"8BQAsImGeAS46fyWw5MhYfGTT0IjBpFw2SS34Dv4Irs"
+             }
+           }
+         }
+       ]
+     },
+     "rng_stream":[
+       "02D1F7E6F26C43D4868D87CEB2353161740AACF1F7163647984B522A848DF1C3",
+       "C9CF4DF2FE6C632BF7886413F76E8852"
+     ]
+   },
+   "generated":{
+     "iv":"yc9N8v5sYyv3iGQT926IUg"
+   },
+   "output":{
+     "cbor_diag":"{1: 2, 2: h'A10101', 3: {5: h'C9CF4DF2FE6C632BF7886413'}, 4: h'45FCE2814311024D3A479E7D3EED063850F3F0B9F3F948677E3AE9869BCF9FF4E1763812', 9: [{3: {1: \"ECDH-ES\", 4: h'6D65726961646F632E6272616E64796275636B406275636B6C616E642E6578616D706C65', -1: {1: 2, -1: 1, -2: h'98F50A4FF6C05861C8860D13A638EA56C3F5AD7590BBFBF054E1C7B4D91D6280', -3: h'F01400B089867804B8E9FC96C3932161F1934F4223069170D924B7E03BF822BB'}}}]}",
+     "cbor":"A501020243A1010103A1054CC9CF4DF2FE6C632BF788641304582445FCE2814311024D3A479E7D3EED063850F3F0B9F3F948677E3AE9869BCF9FF4E17638120981A103A30167454344482D45530458246D65726961646F632E6272616E64796275636B406275636B6C616E642E6578616D706C6520A40102200121582098F50A4FF6C05861C8860D13A638EA56C3F5AD7590BBFBF054E1C7B4D91D6280225820F01400B089867804B8E9FC96C3932161F1934F4223069170D924B7E03BF822BB"
+   }
+ }
