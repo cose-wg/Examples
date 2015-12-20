@@ -1,0 +1,60 @@
+{
+   "title":"ENC-06: Encryption example for spec - Direct ECDH + A128 Key Wrap",
+   "input":{
+     "plaintext":"This is the content.",
+     "enveloped":{
+       "alg":"A128GCM",
+       "protected":{
+         "alg":"A128GCM"
+       },
+       "extern":"",
+       "recipients":[
+         {
+           "alg":"ECDH-SS+A128KW",
+           "key":{
+             "kty":"EC",
+             "kid":"meriadoc.brandybuck@buckland.example",
+             "crv":"P-256",
+             "x":"Ze2loSV3wrroKUN_4zhwGhCqo3Xhu1td4QjeQ5wIVR0",
+             "y":"HlLtdXARY_f55A3fnzQbPcm6hgr34Mp8p-nuzQCE0Zw",
+             "d":"r_kHyZ-a06rmxM3yESK84r1otSg-aQcVStkRhA-iCM8"
+           },
+           "protected":{
+             "alg":"ECDH-SS+A128KW"
+           },
+           "unprotected":{
+             "kid":"meriadoc.brandybuck@buckland.example",
+             "spk_kid":"peregrin.took@tuckborough.example",
+             "apu_hex":"0101"
+           },
+           "sender_key":{
+             "kty":"EC",
+             "crv":"P-256",
+             "use":"enc",
+             "kid":"peregrin.took@tuckborough.example",
+             "x":"mPUKT_bAWGHIhg0TpjjqVsP1rXWQu_vwVOHHtNkdYoA",
+             "y":"8BQAsImGeAS46fyWw5MhYfGTT0IjBpFw2SS34Dv4Irs",
+             "d":"AtH35vJsQ9SGjYfOsjUxYXQKrPH3FjZHmEtSKoSN8cM"
+           }
+         }
+       ]
+     },
+     "rng_stream":[
+       "02D1F7E6F26C43D4868D87CEB2353161740AACF1F7163647984B522A848DF1C3",
+       "C9CF4DF2FE6C632BF7886413F76E8852"
+     ]
+   },
+   "intermediates":{
+     "AAD":"g2lFbnZlbG9wZWRDoQEBQA==",
+     "recipients":[
+       {
+         "KDF":"hAGAgIIY/0ShARg5"
+       }
+     ]
+   },
+   "output":{
+     "cbor_diag":"992([h'A10101', {5: h'02D1F7E6F26C43D4868D87CE'}, h'64F84D913BA60A76070A9A48F26E97E863E28529BF9BE9DE3BEA1788F681200D875242F6', [[h'A1011839', {-3: h'706572656772696E2E746F6F6B407475636B626F726F7567682E6578616D706C65', 4: h'6D65726961646F632E6272616E64796275636B406275636B6C616E642E6578616D706C65', \"apu\": h'0101'}, h'F8EA48D1157BA6B9B2EEE9E54B43FCE7594224EEC6892701']]])",
+     "cbor":"D903E08443A10101A1054C02D1F7E6F26C43D4868D87CE582464F84D913BA60A76070A9A48F26E97E863E28529BF9BE9DE3BEA1788F681200D875242F6818344A1011839A3225821706572656772696E2E746F6F6B407475636B626F726F7567682E6578616D706C650458246D65726961646F632E6272616E64796275636B406275636B6C616E642E6578616D706C65636170754201015818F8EA48D1157BA6B9B2EEE9E54B43FCE7594224EEC6892701"
+   }
+}
+
