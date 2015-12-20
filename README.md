@@ -1,6 +1,6 @@
 # Examples
 
-This project contains a number of exmples and test cases for the IETF COSE WG specification.
+This project contains a number of examples and test cases for the IETF COSE WG specification.
 
 
 The file Example.cddl contains a schema for how the example files are formatted.  

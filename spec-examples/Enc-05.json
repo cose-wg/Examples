@@ -1,11 +1,17 @@
 {
-   "title":"Encryption example for spec - Direct ECDH",
+   "title":"Encryption example for spec - Direct key - partial IV",
    "input":{
      "plaintext":"This is the content.",
      "encrypted":{
        "alg":"AES-CCM-16-128/64",
        "protected":{
          "alg":"AES-CCM-16-128/64"
+       },
+       "unprotected":{
+         "partialIV_hex":"61A7"
+       },
+       "unsent":{
+         "IV_hex":"89F52F65A1C58093000061A7"
        },
        "recipients":[
          {
@@ -18,15 +24,13 @@
            }
          }
        ]
-     },
-     "rng_stream":"89F52F65A1C580933B5261A7"
+     }
    },
    "intermediates":{
      "AAD":"g2dFbmNyeXB0Q6EBCkA="
    },
    "output":{
-     "cbor_diag":"993([h'A1010A', {5: h'89F52F65A1C580933B5261A7'}, h'16C4B98FE85C8E2EED1F990EF40CE02CD54AA3195D43ED618A9DF43E'])",
-     "cbor":"D903E18343A1010AA1054C89F52F65A1C580933B5261A7581C16C4B98FE85C8E2EED1F990EF40CE02CD54AA3195D43ED618A9DF43E"
+     "cbor_diag":"993([h'A1010A', {6: h'61A7'}, h'2B2DD3406AA1E83B488D32D6852BFAD387A5199C6FCC3D6C6BBFF5E2'])",
+     "cbor":"D903E18343A1010AA1064261A7581C2B2DD3406AA1E83B488D32D6852BFAD387A5199C6FCC3D6C6BBFF5E2"
    }
 }
-

@@ -2,6 +2,7 @@ Example = {
    title: tstr,
    ? description: tstr,
    input: Inputs,
+   ? intermediates : Intermediates,
    output: Outputs
 }
 
@@ -9,7 +10,7 @@ Inputs = {
    plaintext: bstr / tstr,
    ? detached: bool,
    (encrypt: Encrypt) / (mac: Mac) / (sign: Sign),
-   ? rng_stream: bstr
+   ? rng_stream: bstr / [+bstr]
 }
 
 Sign = {
@@ -63,6 +64,12 @@ Outputs = {
    ? json: tstr,
    ? json_flat: tstr
    ? cbor: bstr,
-   ? cbor_flat: bstr
+   ? cbor_diag: tstr
 }
 
+Intermediates = {
+   ? "AAD" : tstr,
+   ? "recipients" : [
+      "AAD" : tstr
+   ]
+}
