@@ -1,5 +1,5 @@
 {
-   "title":"Encryption example for spec - Direct ECDH",
+   "title":"Enc-04: Encryption example for spec - Direct ECDH",
    "input":{
      "plaintext":"This is the content.",
      "encrypted":{
