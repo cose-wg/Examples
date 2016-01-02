@@ -11,6 +11,7 @@
          {
            "alg":"direct",
            "unprotected":{
+             "alg":"direct",
              "kid":"sec-64"
            },
            "key":{
