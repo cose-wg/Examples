@@ -1,0 +1,44 @@
+{
+   "title":"AES-GCM-03: Encryption example for spec - ",
+   "input":{
+     "plaintext":"This is the content.",
+     "enveloped":{
+       "alg":"A256GCM",
+       "protected":{
+         "alg":"A256GCM"
+       },
+       "recipients":[
+         {
+           "alg":"direct",
+           "key":{
+             "kty":"oct",
+             "kid":"sec-256",
+             "use":"enc",
+             "k":"Dx4tPEtaaXiHlqW0w9Lh8B8uPUxbanmIl6a1xNPi8QA"
+           },
+           "unprotected":{
+             "alg":"direct",
+             "kid":"sec-64"
+           }
+         }
+       ]
+     },
+     "rng_stream":[
+       "02D1F7E6F26C43D4868D87CEB2353161740AACF1F7163647984B522A848DF1C3",
+       "C9CF4DF2FE6C632BF7886413F76E8852"
+     ]
+   },
+   "intermediates":{
+     "AAD_hex":"8369456E76656C6F70656443A1010340",
+     "CEK_hex":"0F1E2D3C4B5A69788796A5B4C3D2E1F01F2E3D4C5B6A798897A6B5C4D3E2F100",
+     "recipients":[
+       {
+         
+       }
+     ]
+   },
+   "output":{
+     "cbor_diag":"992([h'A10103', {5: h'02D1F7E6F26C43D4868D87CE'}, h'9D64A5A59A3B04867DCCF6B8EF82F7D1A3B25EF82B1753403F748ABB9C4AF09DDE23718F', [[h'', {1: -6, 4: h'7365632D3634'}, h'']]])",
+     "cbor":"D903E08443A10103A1054C02D1F7E6F26C43D4868D87CE58249D64A5A59A3B04867DCCF6B8EF82F7D1A3B25EF82B1753403F748ABB9C4AF09DDE23718F818340A2012504467365632D363440"
+   }
+ }
