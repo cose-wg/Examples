@@ -1,0 +1,44 @@
+{
+   "title":"AES-GCM-ENC-01: Encryption example for spec - implicit",
+   "input":{
+     "plaintext":"This is the content.",
+     "encrypted":{
+       "alg":"A128GCM",
+       "protected":{
+         "alg":"A128GCM"
+       },
+       "recipients":[
+         {
+           "alg":"direct",
+           "key":{
+             "kty":"oct",
+             "kid":"our-secret",
+             "use":"enc",
+             "k":"hJtXIZ2uSN5kbQfbtTNWbg"
+           },
+           "unprotected":{
+             "alg":"direct",
+             "kid":"our-secret"
+           }
+         }
+       ]
+     },
+     "rng_stream":[
+       "02D1F7E6F26C43D4868D87CEB2353161740AACF1F7163647984B522A848DF1C3",
+       "C9CF4DF2FE6C632BF7886413F76E8852"
+     ]
+   },
+   "intermediates":{
+     "AAD_hex":"8369456E6372797074656443A1010140",
+     "CEK_hex":"849B57219DAE48DE646D07DBB533566E",
+     "recipients":[
+       {
+         
+       }
+     ]
+   },
+   "output":{
+     "cbor_diag":"993([h'A10101', {5: h'02D1F7E6F26C43D4868D87CE'}, h'60973A94BB2898009EE52ECFD9AB1DD25867374B08F0C4251F2164D2BD2B410778D4651C'])",
+     "cbor":"D903E18343A10101A1054C02D1F7E6F26C43D4868D87CE582460973A94BB2898009EE52ECFD9AB1DD25867374B08F0C4251F2164D2BD2B410778D4651C"
+   }
+ }
