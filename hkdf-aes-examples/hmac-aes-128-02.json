@@ -1,0 +1,44 @@
+{
+   "title":"HKDF-AES-128-02: Direct HKDF AES-128 - with salt",
+   "input":{
+     "plaintext":"This is the content.",
+     "enveloped":{
+       "alg":"AES-CCM-16-256/64",
+       "protected":{
+         "alg":"AES-CCM-16-256/64"
+       },
+       "recipients":[
+         {
+           "alg":"HKDF-AES-128",
+           "key":{
+             "kty":"oct",
+             "kid":"our-secret",
+             "use":"enc",
+             "k":"hJtXIZ2uSN5kbQfbtTNWbg"
+           },
+           "protected":{
+             "alg":"HKDF-AES-128"
+           },
+           "unprotected":{
+             "kid":"our-secret",
+             "salt":"aabbccddeeffgghh"
+           }
+         }
+       ]
+     },
+     "rng_stream":"BFE89563EE070CE187BDF1C472"
+   },
+   "intermediates":{
+     "AAD_hex":"8369456E76656C6F70656443A1010B40",
+     "CEK_hex":"14A629B6D316C941324DE11B2F5B32F85C08B9BC0560F022DFE790D237A5F741",
+     "recipients":[
+       {
+         "Context_hex":"840B80808219010043A1012B"
+       }
+     ]
+   },
+   "output":{
+     "cbor_diag":"992([h'A1010B', {5: h'BFE89563EE070CE187BDF1C472'}, h'18F072B0151255C0AFAF5387A14E5296AD59977F3960F0ED5F8E18DD', [[h'A1012B', {-20: h'61616262636364646565666667676868', 4: h'6F75722D736563726574'}, h'']]])",
+     "cbor":"D903E08443A1010BA1054DBFE89563EE070CE187BDF1C472581C18F072B0151255C0AFAF5387A14E5296AD59977F3960F0ED5F8E18DD818343A1012BA2335061616262636364646565666667676868044A6F75722D73656372657440"
+   }
+ }
