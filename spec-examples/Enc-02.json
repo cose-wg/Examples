@@ -26,7 +26,7 @@
            "unsent":{
              "apu_id":"lighting-client",
              "apv_id":"lighting-server",
-             "supp_pub_other":"Encryption Example 02"
+             "pub_other":"Encryption Example 02"
            }
          }
        ]
