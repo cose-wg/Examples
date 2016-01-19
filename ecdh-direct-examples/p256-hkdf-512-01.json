@@ -1,0 +1,55 @@
+{
+   "title":"p256-hkdf-512-01: ECDH-ES direct w/ hkdf-sha-512 for 128-bit key",
+   "input":{
+     "plaintext":"This is the content.",
+     "enveloped":{
+       "alg":"A128GCM",
+       "protected":{
+         "alg":"A128GCM"
+       },
+       "recipients":[
+         {
+           "alg":"ECDH-ES-512",
+           "key":{
+             "kty":"EC",
+             "kid":"meriadoc.brandybuck@buckland.example",
+             "crv":"P-256",
+             "x":"Ze2loSV3wrroKUN_4zhwGhCqo3Xhu1td4QjeQ5wIVR0",
+             "y":"HlLtdXARY_f55A3fnzQbPcm6hgr34Mp8p-nuzQCE0Zw",
+             "d":"r_kHyZ-a06rmxM3yESK84r1otSg-aQcVStkRhA-iCM8"
+           },
+           "protected":{
+             "alg":"ECDH-ES-512"
+           },
+           "unprotected":{
+             "kid":"meriadoc.brandybuck@buckland.example",
+             "epk":{
+               "kty":"EC",
+               "crv":"P-256",
+               "x":"mPUKT_bAWGHIhg0TpjjqVsP1rXWQu_vwVOHHtNkdYoA",
+               "y":"8BQAsImGeAS46fyWw5MhYfGTT0IjBpFw2SS34Dv4Irs"
+             }
+           }
+         }
+       ]
+     },
+     "rng_stream":[
+       "02D1F7E6F26C43D4868D87CEB2353161740AACF1F7163647984B522A848DF1C3",
+       "C9CF4DF2FE6C632BF7886413F76E8852"
+     ]
+   },
+   "intermediates":{
+     "AAD_hex":"8369456E76656C6F70656443A1010140",
+     "CEK_hex":"4054BD53B4356FB2E0FCCD8717C7DD6D",
+     "recipients":[
+       {
+         "Context_hex":"8401808082188044A1013819",
+         "Secret_hex":"4B31712E096E5F20B4ECF9790FD8CC7C8B7E2C8AD90BDA81CB224F62C0E7B9A6"
+       }
+     ]
+   },
+   "output":{
+     "cbor_diag":"992([h'A10101', {5: h'C9CF4DF2FE6C632BF7886413'}, h'21272715A59FECCF199DA596038C87E3F2E109AFF29FD8B882085CF1B4BC2F89B348346A', [[h'A1013819', {-1: {1: 2, -1: 1, -2: h'98F50A4FF6C05861C8860D13A638EA56C3F5AD7590BBFBF054E1C7B4D91D6280', -3: h'F01400B089867804B8E9FC96C3932161F1934F4223069170D924B7E03BF822BB'}, 4: h'6D65726961646F632E6272616E64796275636B406275636B6C616E642E6578616D706C65'}, h'']]])",
+     "cbor":"D903E08443A10101A1054CC9CF4DF2FE6C632BF7886413582421272715A59FECCF199DA596038C87E3F2E109AFF29FD8B882085CF1B4BC2F89B348346A818344A1013819A220A40102200121582098F50A4FF6C05861C8860D13A638EA56C3F5AD7590BBFBF054E1C7B4D91D6280225820F01400B089867804B8E9FC96C3932161F1934F4223069170D924B7E03BF822BB0458246D65726961646F632E6272616E64796275636B406275636B6C616E642E6578616D706C6540"
+   }
+ }
