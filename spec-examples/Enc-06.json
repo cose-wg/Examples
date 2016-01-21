@@ -27,6 +27,14 @@
              "spk_kid":"peregrin.took@tuckborough.example",
              "apu_nonce_hex":"0101"
            },
+           "unsent":{
+             "spk":{
+               "kty":"EC",
+               "crv":"P-256",
+               "x":"mPUKT_bAWGHIhg0TpjjqVsP1rXWQu_vwVOHHtNkdYoA",
+               "y":"8BQAsImGeAS46fyWw5MhYfGTT0IjBpFw2SS34Dv4Irs"
+             }
+           },
            "sender_key":{
              "kty":"EC",
              "crv":"P-256",
