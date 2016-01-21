@@ -32,7 +32,8 @@
                "kty":"EC",
                "crv":"P-256",
                "x":"mPUKT_bAWGHIhg0TpjjqVsP1rXWQu_vwVOHHtNkdYoA",
-               "y":"8BQAsImGeAS46fyWw5MhYfGTT0IjBpFw2SS34Dv4Irs"
+               "y":"8BQAsImGeAS46fyWw5MhYfGTT0IjBpFw2SS34Dv4Irs",
+               "d":"AtH35vJsQ9SGjYfOsjUxYXQKrPH3FjZHmEtSKoSN8cM"
              }
            },
            "sender_key":{
