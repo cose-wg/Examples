@@ -1,6 +1,5 @@
 {
-   "title":"mac-fail-05: Direct key + HMAC-SHA256",
-   "fail":true,
+   "title":"mac-pass-01: Direct key + HMAC-SHA256",
    "input":{
      "plaintext":"This is the content.",
      "mac":{
