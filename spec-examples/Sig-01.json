@@ -18,13 +18,14 @@
            },
            "protected":{
              "alg":"ES256"
-           },
-           "alg":"ES256"
+           }
          }
        ]
      },
      "rng_description":"seed for signature",
-     "rng_stream":"20DB1328B01EBB78122CE86D5B1A3A097EC44EAC603FD5F60108EDF98EA81393"
+     "rng_stream":[
+       "20DB1328B01EBB78122CE86D5B1A3A097EC44EAC603FD5F60108EDF98EA81393"
+     ]
    },
    "intermediates":{
      "signers":[

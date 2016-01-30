@@ -9,7 +9,6 @@
        },
        "recipients":[
          {
-           "alg":"direct",
            "unprotected":{
              "alg":"direct",
              "kid":"our-secret"

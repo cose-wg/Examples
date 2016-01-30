@@ -9,7 +9,6 @@
        },
        "recipients":[
          {
-           "alg":"A256KW",
            "unprotected":{
              "kid":"018c0ae5-4d9b-471b-bfd6-eef314bc7037",
              "alg":"A256KW"
@@ -23,7 +22,9 @@
          }
        ]
      },
-     "rng_stream":"DDDC08972DF9BE62855291A17A1B4CF7EA02A160193C28DD5088A862996DE2502C6C499BE6211E5CCEF2F21EF0F8DF69C5BE05EC8F1179D216F06D3155EC127E"
+     "rng_stream":[
+       "DDDC08972DF9BE62855291A17A1B4CF7EA02A160193C28DD5088A862996DE2502C6C499BE6211E5CCEF2F21EF0F8DF69C5BE05EC8F1179D216F06D3155EC127E"
+     ]
    },
    "intermediates":{
      "recipients":[

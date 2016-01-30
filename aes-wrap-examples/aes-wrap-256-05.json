@@ -3,13 +3,11 @@
    "input":{
      "plaintext":"This is the content.",
      "enveloped":{
-       "alg":"A192GCM",
        "protected":{
          "alg":"A192GCM"
        },
        "recipients":[
          {
-           "alg":"A256KW",
            "unprotected":{
              "kid":"018c0ae5-4d9b-471b-bfd6-eef314bc7037",
              "alg":"A256KW"
@@ -23,7 +21,10 @@
          }
        ]
      },
-     "rng_stream":"DDDC08972DF9BE62855291A17A1B4CF7D3F44E14D7E01D160EB3B6A9FD6836C8E9AA27F2"
+     "rng_stream":[
+       "DDDC08972DF9BE62855291A1",
+       "7A1B4CF7D3F44E14D7E01D160EB3B6A9FD6836C8E9AA27F2"
+     ]
    },
    "intermediates":{
      "recipients":[

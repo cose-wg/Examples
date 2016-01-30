@@ -3,13 +3,11 @@
    "input":{
      "plaintext":"This is the content.",
      "encrypted":{
-       "alg":"AES-CCM-64-128/64",
        "protected":{
          "alg":"AES-CCM-64-128/64"
        },
        "recipients":[
          {
-           "alg":"direct",
            "key":{
              "kty":"oct",
              "kid":"our-secret",
@@ -23,7 +21,9 @@
          }
        ]
      },
-     "rng_stream":"89F52F65A1C580933B5261A72F"
+     "rng_stream":[
+       "89F52F65A1C580"
+     ]
    },
    "intermediates":{
      "recipients":[

@@ -9,7 +9,6 @@
        },
        "recipients":[
          {
-           "alg":"A192KW",
            "unprotected":{
              "kid":"sec-192",
              "alg":"A192KW"
@@ -23,7 +22,9 @@
          }
        ]
      },
-     "rng_stream":"DDDC08972DF9BE62855291A17A1B4CF7823E187F795DD52817F2D71AEC89359E"
+     "rng_stream":[
+       "DDDC08972DF9BE62855291A17A1B4CF7823E187F795DD52817F2D71AEC89359E"
+     ]
    },
    "intermediates":{
      "recipients":[
