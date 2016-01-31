@@ -3,13 +3,11 @@
    "input":{
      "plaintext":"This is the content.",
      "enveloped":{
-       "alg":"A256GCM",
        "protected":{
          "alg":"A256GCM"
        },
        "recipients":[
          {
-           "alg":"ECDH-ES-A256KW",
            "key":{
              "kty":"EC",
              "kid":"meriadoc.brandybuck@buckland.example",
@@ -33,7 +31,11 @@
          }
        ]
      },
-     "rng_stream":"02D1F7E6F26C43D4868D87CEB2353161740AACF1F7163647984B522A848DF1C3C9CF4DF2FE6C632BF7886413F76E88525495A78CC7BD0D413C4AD5E2E3602BAB795B6B40F00C872B3B90308C"
+     "rng_stream":[
+       "02D1F7E6F26C43D4868D87CE",
+       "B2353161740AACF1F7163647984B522A848DF1C3C9CF4DF2FE6C632BF7886413",
+       "F76E88525495A78CC7BD0D413C4AD5E2E3602BAB795B6B40F00C872B3B90308C"
+     ]
    },
    "intermediates":{
      "AAD_hex":"8369456E76656C6F70656443A1010340",

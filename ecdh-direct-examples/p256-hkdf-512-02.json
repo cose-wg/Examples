@@ -3,13 +3,11 @@
    "input":{
      "plaintext":"This is the content.",
      "enveloped":{
-       "alg":"A256GCM",
        "protected":{
          "alg":"A256GCM"
        },
        "recipients":[
          {
-           "alg":"ECDH-ES-512",
            "key":{
              "kty":"EC",
              "kid":"meriadoc.brandybuck@buckland.example",
@@ -22,20 +20,14 @@
              "alg":"ECDH-ES-512"
            },
            "unprotected":{
-             "kid":"meriadoc.brandybuck@buckland.example",
-             "epk":{
-               "kty":"EC",
-               "crv":"P-256",
-               "x":"mPUKT_bAWGHIhg0TpjjqVsP1rXWQu_vwVOHHtNkdYoA",
-               "y":"8BQAsImGeAS46fyWw5MhYfGTT0IjBpFw2SS34Dv4Irs"
-             }
+             "kid":"meriadoc.brandybuck@buckland.example"
            }
          }
        ]
      },
      "rng_stream":[
        "02D1F7E6F26C43D4868D87CEB2353161740AACF1F7163647984B522A848DF1C3",
-       "C9CF4DF2FE6C632BF7886413F76E8852"
+       "C9CF4DF2FE6C632BF7886413"
      ]
    },
    "intermediates":{

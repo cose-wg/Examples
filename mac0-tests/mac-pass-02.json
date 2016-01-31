@@ -10,7 +10,6 @@
        "external":"ff00ee11dd22cc33bb44aa559966",
        "recipients":[
          {
-           "alg":"direct",
            "unprotected":{
              "alg":"direct",
              "kid":"our-secret"
@@ -23,8 +22,7 @@
            }
          }
        ]
-     },
-     "rng_stream":"B0AE4015BCE7691BB3B722DAEC5029D0BEB22B2074E2D82F295A6F58362AB73C72EB2C48AD2A5C5C6E32A53E69E1AC147E64FE2CA26360976A918D11CB2C3506"
+     }
    },
    "intermediates":{
      "ToMac_hex":"84644D414330404EFF00EE11DD22CC33BB44AA55996654546869732069732074686520636F6E74656E742E",
