@@ -9,7 +9,6 @@
        },
        "recipients":[
          {
-           "alg":"HKDF-AES-256",
            "key":{
              "kty":"oct",
              "kid":"sec-256",
@@ -25,8 +24,7 @@
            }
          }
        ]
-     },
-     "rng_stream":"BFE89563EE070CE187BDF1C472"
+     }
    },
    "intermediates":{
      "AAD_hex":"8369456E76656C6F70656443A1010A40",

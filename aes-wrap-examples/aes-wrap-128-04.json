@@ -3,13 +3,11 @@
    "input":{
      "plaintext":"This is the content.",
      "enveloped":{
-       "alg":"A128GCM",
        "protected":{
          "alg":"A128GCM"
        },
        "recipients":[
          {
-           "alg":"A128KW",
            "unprotected":{
              "kid":"our-secret",
              "alg":"A128KW"
@@ -23,7 +21,10 @@
          }
        ]
      },
-     "rng_stream":"DDDC08972DF9BE62855291A17A1B4CF78F4B8C6E9AB68198C43D22F3"
+     "rng_stream":[
+       "DDDC08972DF9BE62855291A1",
+       "7A1B4CF78F4B8C6E9AB68198C43D22F3"
+     ]
    },
    "intermediates":{
      "recipients":[

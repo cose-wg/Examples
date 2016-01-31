@@ -3,14 +3,12 @@
    "input":{
      "plaintext":"This is the content.",
      "enveloped":{
-       "alg":"A128GCM",
        "protected":{
          "alg":"A128GCM"
        },
        "countersign":{
          "signers":[
            {
-             "alg":"ES512",
              "key":{
                "kty":"EC",
                "kid":"bilbo.baggins@hobbiton.example",
@@ -31,7 +29,6 @@
        },
        "recipients":[
          {
-           "alg":"ECDH-ES",
            "key":{
              "kty":"EC",
              "kid":"meriadoc.brandybuck@buckland.example",
@@ -55,7 +52,11 @@
          }
        ]
      },
-     "rng_stream":"02D1F7E6F26C43D4868D87CEB2353161740AACF1F7163647984B522A848DF1C3C9CF4DF2FE6C632BF7886413F76E88529A17637C50ACB2F5D6320F37A9E7257EE0D00D2EB21A87604E89DD06FA790EE996A8450648837F702CEE09E9AC96537A66C437958E19D2CA72068B437873"
+     "rng_stream":[
+       "02D1F7E6F26C43D4868D87CEB2353161740AACF1F7163647984B522A848DF1C3",
+       "C9CF4DF2FE6C632BF7886413",
+       "F76E88529A17637C50ACB2F5D6320F37A9E7257EE0D00D2EB21A87604E89DD06FA790EE996A8450648837F702CEE09E9AC96537A66C437958E19D2CA72068B437873"
+     ]
    },
    "generated":{
      "iv":"yc9N8v5sYyv3iGQT926IUg"

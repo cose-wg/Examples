@@ -9,7 +9,6 @@
        },
        "recipients":[
          {
-           "alg":"direct",
            "unprotected":{
              "alg":"direct",
              "kid":"sec-48"
@@ -22,8 +21,7 @@
            }
          }
        ]
-     },
-     "rng_stream":""
+     }
    },
    "intermediates":{
      "ToMac_hex":"84644D41433043A101064054546869732069732074686520636F6E74656E742E",

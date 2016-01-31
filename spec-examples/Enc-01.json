@@ -3,13 +3,11 @@
    "input":{
      "plaintext":"This is the content.",
      "enveloped":{
-       "alg":"A128GCM",
        "protected":{
          "alg":"A128GCM"
        },
        "recipients":[
          {
-           "alg":"ECDH-ES",
            "key":{
              "kty":"EC",
              "kid":"meriadoc.brandybuck@buckland.example",
@@ -35,7 +33,7 @@
      },
      "rng_stream":[
        "02D1F7E6F26C43D4868D87CEB2353161740AACF1F7163647984B522A848DF1C3",
-       "C9CF4DF2FE6C632BF7886413F76E8852"
+       "C9CF4DF2FE6C632BF7886413"
      ]
    },
    "intermediates":{

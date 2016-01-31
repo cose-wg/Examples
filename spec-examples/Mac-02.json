@@ -3,13 +3,11 @@
    "input":{
      "plaintext":"This is the content.",
      "mac":{
-       "alg":"AES-MAC-128/64",
        "protected":{
          "alg":"AES-MAC-128/64"
        },
        "recipients":[
          {
-           "alg":"A256KW",
            "unprotected":{
              "kid":"018c0ae5-4d9b-471b-bfd6-eef314bc7037",
              "alg":"A256KW"
@@ -23,7 +21,9 @@
          }
        ]
      },
-     "rng_stream":"DDDC08972DF9BE62855291A17A1B4CF7"
+     "rng_stream":[
+       "DDDC08972DF9BE62855291A17A1B4CF7"
+     ]
    },
    "intermediates":{
      "ToMac_hex":"84634D414343A1010E4054546869732069732074686520636F6E74656E742E",

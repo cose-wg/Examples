@@ -19,8 +19,7 @@
              },
              "protected":{
                "alg":"ES256"
-             },
-             "alg":"ES256"
+             }
            }
          ]
        },
@@ -39,13 +38,15 @@
            },
            "protected":{
              "alg":"ES256"
-           },
-           "alg":"ES256"
+           }
          }
        ]
      },
      "rng_description":"seed for signature",
-     "rng_stream":"5BFDF6CE57C0B453547D260B56AFFDB7FEBCFD99FA0582F10CAB2CD59973BD4520DB1328B01EBB78122CE86D5B1A3A097EC44EAC603FD5F60108EDF98EA81393"
+     "rng_stream":[
+       "5BFDF6CE57C0B453547D260B56AFFDB7FEBCFD99FA0582F10CAB2CD59973BD45",
+       "20DB1328B01EBB78122CE86D5B1A3A097EC44EAC603FD5F60108EDF98EA81393"
+     ]
    },
    "intermediates":{
      "signers":[

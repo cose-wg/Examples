@@ -3,13 +3,11 @@
    "input":{
      "plaintext":"This is the content.",
      "enveloped":{
-       "alg":"AES-CCM-16-128/64",
        "protected":{
          "alg":"AES-CCM-16-128/64"
        },
        "recipients":[
          {
-           "alg":"HKDF-HMAC-SHA-512",
            "key":{
              "kty":"oct",
              "kid":"our-secret",
@@ -31,7 +29,9 @@
          }
        ]
      },
-     "rng_stream":"BFE89563EE070CE187BDF1C472"
+     "rng_stream":[
+       "BFE89563EE070CE187BDF1C472"
+     ]
    },
    "intermediates":{
      "AAD_hex":"8369456E76656C6F70656443A1010A40",

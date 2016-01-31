@@ -18,13 +18,14 @@
            },
            "protected":{
              "alg":"ES384"
-           },
-           "alg":"ES384"
+           }
          }
        ]
      },
      "rng_description":"seed for signature",
-     "rng_stream":"6385EF5ECB18BE84EB57B41F367DA899A26EB19CADBD0EE729F6AE232B5D7B7C1C80506BA3BAB86ABD6A988D6460D53E"
+     "rng_stream":[
+       "6385EF5ECB18BE84EB57B41F367DA899A26EB19CADBD0EE729F6AE232B5D7B7C1C80506BA3BAB86ABD6A988D6460D53E"
+     ]
    },
    "intermediates":{
      "signers":[

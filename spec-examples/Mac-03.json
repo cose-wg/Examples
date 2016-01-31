@@ -3,13 +3,11 @@
    "input":{
      "plaintext":"This is the content.",
      "mac":{
-       "alg":"HS256",
        "protected":{
          "alg":"HS256"
        },
        "recipients":[
          {
-           "alg":"ECDH-ES+A128KW",
            "key":{
              "kty":"EC",
              "kid":"bilbo.baggins@hobbiton.example",
@@ -24,7 +22,6 @@
            }
          },
          {
-           "alg":"A256KW",
            "unprotected":{
              "kid":"018c0ae5-4d9b-471b-bfd6-eef314bc7037",
              "alg":"A256KW"
@@ -38,7 +35,10 @@
          }
        ]
      },
-     "rng_stream":"2B7459201E5046E33FDB514C5E14A1B01D9893F8936335F821FCB1AFF450B226242773DB895E3E88FFE52628782CCD0C7457D91CCD1DAEE5A76C34F197DFD677E308F7620394503834DDDE67F5D823B9881A0A6A067FFAF10AC05DAE0AF7CCD07542008988899A10C6E7ABD1807D606DFD0B175399E33F62F0125A60A3315231BED1"
+     "rng_stream":[
+       "2B7459201E5046E33FDB514C5E14A1B01D9893F8936335F821FCB1AFF450B226",
+       "242773DB895E3E88FFE52628782CCD0C7457D91CCD1DAEE5A76C34F197DFD677E308F7620394503834DDDE67F5D823B9881A0A6A067FFAF10AC05DAE0AF7CCD07542"
+     ]
    },
    "intermediates":{
      "ToMac_hex":"84634D414343A101054054546869732069732074686520636F6E74656E742E",

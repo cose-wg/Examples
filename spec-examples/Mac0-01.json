@@ -3,15 +3,14 @@
    "input":{
      "plaintext":"This is the content.",
      "mac0":{
-       "alg":"AES-MAC-256/64",
        "protected":{
          "alg":"AES-MAC-256/64"
        },
        "recipients":[
          {
-           "alg":"direct",
            "unprotected":{
-             "kid":"our-secret"
+             "kid":"our-secret",
+             "alg":"direct"
            },
            "key":{
              "kty":"oct",

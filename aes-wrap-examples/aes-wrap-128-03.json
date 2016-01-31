@@ -9,7 +9,6 @@
        },
        "recipients":[
          {
-           "alg":"A128KW",
            "unprotected":{
              "kid":"our-secret",
              "alg":"A128KW"
@@ -23,7 +22,9 @@
          }
        ]
      },
-     "rng_stream":"DDDC08972DF9BE62855291A17A1B4CF767C2DC762CB551911893BF7754988B0A286127BFF5D60C4CBC877CAC4BF3BA02C07AD544C951C3CA2FC46B70219BC3DC"
+     "rng_stream":[
+       "DDDC08972DF9BE62855291A17A1B4CF767C2DC762CB551911893BF7754988B0A286127BFF5D60C4CBC877CAC4BF3BA02C07AD544C951C3CA2FC46B70219BC3DC"
+     ]
    },
    "intermediates":{
      "recipients":[

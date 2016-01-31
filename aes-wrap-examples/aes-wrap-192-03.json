@@ -9,7 +9,6 @@
        },
        "recipients":[
          {
-           "alg":"A192KW",
            "unprotected":{
              "kid":"sec-192",
              "alg":"A192KW"
@@ -23,7 +22,9 @@
          }
        ]
      },
-     "rng_stream":"DDDC08972DF9BE62855291A17A1B4CF7F44B35C1824229B8625961194BC0D06FACDFB04D99C91E3AE3467274F6467F21325594BAD797B9288EC90DDB16AEB2FC"
+     "rng_stream":[
+       "DDDC08972DF9BE62855291A17A1B4CF7F44B35C1824229B8625961194BC0D06FACDFB04D99C91E3AE3467274F6467F21325594BAD797B9288EC90DDB16AEB2FC"
+     ]
    },
    "intermediates":{
      "recipients":[
