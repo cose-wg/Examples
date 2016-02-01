@@ -22,13 +22,7 @@
              "alg":"ECDH-SS-512"
            },
            "unprotected":{
-             "kid":"meriadoc.brandybuck@buckland.example",
-             "spk":{
-               "kty":"EC",
-               "crv":"P-521",
-               "x":"APP1tIC1Ey2__4aekg06nicpK3uvQELX7HPaZUXYf2qd-YCYZlR7L6RqW0CiGjNv9uyJ5srxdRb_St87pwbfZx4B",
-               "y":"AQMe7-xEu5s49sLiFXIGsY4FVgAxFe6HW1nT3sqOcqgkFs0_Y7fWpDkAGLc1Og3Qqmt7-8-7d0fTW1nNtf5RJqdM"
-             }
+             "kid":"meriadoc.brandybuck@buckland.example"
            },
            "sender_key":{
              "kty":"EC",
