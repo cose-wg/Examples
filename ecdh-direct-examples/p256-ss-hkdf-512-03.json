@@ -21,13 +21,7 @@
              "alg":"ECDH-SS-512"
            },
            "unprotected":{
-             "kid":"meriadoc.brandybuck@buckland.example",
-             "spk":{
-               "kty":"EC",
-               "crv":"P-256",
-               "x":"7cvYCcdU22WCwW1tZXR8iuzJLWGcd46xfxO1XJs-SPU",
-               "y":"DzhJXgz9RI6TseNmwEfLoNVns8UmvONsPzQDop2dKoo"
-             }
+             "kid":"meriadoc.brandybuck@buckland.example"
            },
            "sender_key":{
              "kty":"EC",
