@@ -17,7 +17,15 @@ As time and the spec progresses, it is expected that we will start looking at ad
 
 * cbc-mac-examples - Contians Mac and Mac0 examples related to the AES CBC Mac algorithm
 
+* chacha-poly-examples - Contains Enveloped and Encrypt examples related to the ChaCha-Poly1305 algorithm
+
+* ecdh-direct-examples - Contains Enveloped and MAC examples related to the ECDH key managment algorithm where no key wrap algorithm is used
+
+* ecdh-wrap-examples - Contains Enveloped and MAC examples related to the ECDH key managment algorithm where a key wrap algorithm is used
+
 * ecdsa-examples - Contains Sign and Sign0 examples related to the ECDSA signature algorithm
+
+* encrypted-tests - Contains Encrypt test examples
 
 * hkdf-aes-examples - Contains Enveloped and Mac examples related to the use of direct key with the HKDF-AES recipient algorithms
 
@@ -28,4 +36,4 @@ As time and the spec progresses, it is expected that we will start looking at ad
 
 # Random number generation
 
-The examples can potentially contain a random number generation stream.  This field contains a re-playable random number generator sequence that is used by the program which generates the examples.  The order in which calls are made to the random number generator should be documented int he description field when this present in the file.
+The examples can potentially contain a random number generation stream.  This field contains a re-playable random number generator sequence that is used by the program which generates the examples.  The order in which calls are made to the random number generator should be documented in the description field when this present in the file.
