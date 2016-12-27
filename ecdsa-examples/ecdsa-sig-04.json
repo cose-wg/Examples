@@ -1,34 +1,34 @@
 {
    "title":"ECDSA-sig-01: ECDSA - P-256 w/ SHA-512 - implicit",
    "input":{
-     "plaintext":"This is the content.",
-     "sign0":{
-       "key":{
-         "kty":"EC",
-         "kid":"11",
-         "crv":"P-256",
-         "x":"usWxHK2PmfnHKwXPS54m0kTcGJ90UiglWiGahtagnv8",
-         "y":"IBOL-C3BttVivg-lSreASjpkttcsz-1rb7btKLv8EX4",
-         "d":"V8kgd2ZBRuh2dgyVINBUqpPDr7BOMGcF22CQMIUHtNM"
-       },
-       "unprotected":{
-         "kid":"11"
-       },
-       "protected":{
+      "plaintext":"This is the content.",
+      "sign0":{
+         "key":{
+            "kty":"EC",
+            "kid":"11",
+            "crv":"P-256",
+            "x":"usWxHK2PmfnHKwXPS54m0kTcGJ90UiglWiGahtagnv8",
+            "y":"IBOL-C3BttVivg-lSreASjpkttcsz-1rb7btKLv8EX4",
+            "d":"V8kgd2ZBRuh2dgyVINBUqpPDr7BOMGcF22CQMIUHtNM"
+         },
+         "unprotected":{
+            "kid":"11"
+         },
+         "protected":{
+            "alg":"ES512"
+         },
          "alg":"ES512"
-       },
-       "alg":"ES512"
-     },
-     "rng_description":"seed for signature",
-     "rng_stream":[
-       "20DB1328B01EBB78122CE86D5B1A3A097EC44EAC603FD5F60108EDF98EA81393"
-     ]
+      },
+      "rng_description":"seed for signature",
+      "rng_stream":[
+         "20DB1328B01EBB78122CE86D5B1A3A097EC44EAC603FD5F60108EDF98EA81393"
+      ]
    },
    "intermediates":{
-     "ToBeSign_hex":"846A5369676E61747572653144A10138234054546869732069732074686520636F6E74656E742E"
+      "ToBeSign_hex":"846A5369676E61747572653144A10138234054546869732069732074686520636F6E74656E742E"
    },
    "output":{
-     "cbor_diag":"18([h'A1013823', {4: h'3131'}, h'546869732069732074686520636F6E74656E742E', h'EAE868ECC176883766C5DC5BA5B8DCA25DAB3C2E56A551CE5705B793914348E14A37288571498A1B64BA08D2063B8749D75CDC9D7F61EB752D23819473F6BD65'])",
-     "cbor":"D28444A1013823A10442313154546869732069732074686520636F6E74656E742E5840EAE868ECC176883766C5DC5BA5B8DCA25DAB3C2E56A551CE5705B793914348E14A37288571498A1B64BA08D2063B8749D75CDC9D7F61EB752D23819473F6BD65"
+      "cbor_diag":"18([h'A1013823', {4: h'3131'}, h'546869732069732074686520636F6E74656E742E', h'EAE868ECC176883766C5DC5BA5B8DCA25DAB3C2E56A551CE5705B793914348E14A37288571498A1B64BA08D2063B8749D75CDC9D7F61EB752D23819473F6BD65'])",
+      "cbor":"D28444A1013823A10442313154546869732069732074686520636F6E74656E742E5840EAE868ECC176883766C5DC5BA5B8DCA25DAB3C2E56A551CE5705B793914348E14A37288571498A1B64BA08D2063B8749D75CDC9D7F61EB752D23819473F6BD65"
    }
- }
+}
