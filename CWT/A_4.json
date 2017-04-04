@@ -1,0 +1,39 @@
+{
+   "title":"CWT doument - Appendix A.4",
+   "input":{
+       "plaintext_hex":"a70175636f61703a2f2f61732e6578616d706c652e636f6d02656572696b77037818636f61703a2f2f6c696768742e6578616d706c652e636f6d04c11a5612aeb005c11a5610d9f006c11a5610d9f007420b71",
+      "mac0":{
+         "alg":"HS256/64",
+         "protected":{
+            "ctyp":61,
+            "alg":"HS256/64"
+         },
+         "recipients":[
+            {
+               "unprotected":{
+                  "alg":"direct",
+                  "kid":"our-secret"
+               },
+               "key":{
+                  "kty":"oct",
+                  "kid":"our-secret",
+                  "use":"enc",
+                  "k_hex":"e60198ac1650ec9210d7f4f5b27aeae2ada8f4adada555909edca75ce2ae506e"
+               }
+            }
+         ]
+      }
+   },
+   "intermediates":{
+      "ToMac_hex":"84644D41433046A203183D0104405853A70175636F61703A2F2F61732E6578616D706C652E636F6D02656572696B77037818636F61703A2F2F6C696768742E6578616D706C652E636F6D04C11A5612AEB005C11A5610D9F006C11A5610D9F007420B71",
+      "CEK_hex":"E60198AC1650EC9210D7F4F5B27AEAE2ADA8F4ADADA555909EDCA75CE2AE506E",
+      "recipients":[
+         {
+         }
+      ]
+   },
+   "output":{
+      "cbor_diag":"17([h'A203183D0104', {}, h'A70175636F61703A2F2F61732E6578616D706C652E636F6D02656572696B77037818636F61703A2F2F6C696768742E6578616D706C652E636F6D04C11A5612AEB005C11A5610D9F006C11A5610D9F007420B71', h'6D1CCD1429835434'])",
+      "cbor":"D18446A203183D0104A05853A70175636F61703A2F2F61732E6578616D706C652E636F6D02656572696B77037818636F61703A2F2F6C696768742E6578616D706C652E636F6D04C11A5612AEB005C11A5610D9F006C11A5610D9F007420B71486D1CCD1429835434"
+   }
+}

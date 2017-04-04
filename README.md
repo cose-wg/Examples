@@ -33,6 +33,8 @@ As time and the spec progresses, it is expected that we will start looking at ad
 
 * hmac-examples - Contains Mac and Mac0 examples related to the HMAC-SHA algorithm
 
+* CWT - Contains the examples from draft-ace-cwt
+
 
 # Random number generation
 
