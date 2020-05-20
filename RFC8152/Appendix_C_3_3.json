@@ -48,7 +48,10 @@
                      "x":"mPUKT_bAWGHIhg0TpjjqVsP1rXWQu_vwVOHHtNkdYoA",
                      "y":"8BQAsImGeAS46fyWw5MhYfGTT0IjBpFw2SS34Dv4Irs"
                   }
-               }
+               },
+                "unsent":{
+                    "compressed": 1
+                }
             }
          ]
       },

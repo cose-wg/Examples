@@ -19,7 +19,11 @@
                },
                "protected":{
                   "alg":"ECDH-ES+A128KW"
-               }
+
+               },
+                "unsent":{
+                    "compressed": 1
+                }
             },
             {
                "unprotected":{
@@ -31,7 +35,7 @@
                   "kid":"018c0ae5-4d9b-471b-bfd6-eef314bc7037",
                   "use":"enc",
                   "k":"hJtXIZ2uSN5kbQfbtTNWbpdmhkV8FJG-Onbc6mxCcYg"
-               }
+                }
             }
          ]
       },
