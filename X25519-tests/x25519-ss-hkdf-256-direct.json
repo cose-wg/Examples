@@ -1,5 +1,5 @@
 {
-   "title":"X25519-hkdf-256-direct-01: X25519 direct w/ hkdf-sha-256 for 128-bit key",
+   "title":"X25519-ss-hkdf-256-direct-01: X25519 direct w/ hkdf-sha-256 for 128-bit key - static sender",
    "input":{
       "plaintext":"This is the content.",
       "enveloped":{
@@ -12,8 +12,8 @@
                   "kty":"OKP",
                   "kid":"X25519-bob",
                   "crv":"X25519",
-                  "x":"3p7bfXt9wbTTW2HC7OQ1Nz+DQ8hbeGdNrfx+FG+IK08=",
-                  "d":"XasIfmJKikt54X+Lg4AO5m87sSkmGLb9HC+LJ/+I4Os="
+                   "x_hex":"DE9EDB7D7B7DC1B4D35B61C2ECE435373F8343C85B78674DADFC7E146F882B4F",
+                   "d_hex":"58AB087E624A8A4B79E17F8B83800EE66F3BB1292618B6FD1C2F8B27FF88E06B"
                },
                "protected":{
                   "alg":"ECDH-SS"
@@ -25,8 +25,8 @@
                   "kty":"OKP",
                   "kid":"X25519-alice",
                   "crv":"X25519",
-                  "x":"hSDwCYkwp1R0i33ctD73Wg2/Og0mOBr066SpjqqbTmo=",
-                  "d":"dwdtCnMYpX08FsFyUbJmRd9ML4frwJkqsXf7pR25LCo="
+                   "x_hex":"8520F0098930A754748B7DDCB43EF75A0DBF3A0D26381AF4EBA4A98EAA9B4E6A",
+                   "d_hex":"70076D0A7318A57D3C16C17251B26645DF4C2F87EBC0992AB177FBA51DB92C6A"
                }
             }
          ]
