@@ -21,6 +21,9 @@
                },
                "unprotected":{
                   "kid":"meriadoc.brandybuck@buckland.example"
+               },
+                "unsent":{
+                    "compressed": 0
                }
             }
          ]
