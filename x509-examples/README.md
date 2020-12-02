@@ -1,9 +1,10 @@
 # Examples using COSE header parameters for X.509 certificates
 
-X.509 certificates used in these examples were generated using input from [draft-dkg-lamps-samples](https://datatracker.ietf.org/doc/draft-dkg-lamps-samples/).
+The X.509 certificates used in these examples were generated following the examples and scripts in [draft-dkg-lamps-samples](https://datatracker.ietf.org/doc/draft-dkg-lamps-samples/).  
 
 ## Certificate Authority Certificate
 
+This certificate is contained in `ca.crt`.
 ```
 -----BEGIN CERTIFICATE-----
 MIIBnjCCAUWgAwIBAgIUFKSVf9UGqiqvxmmogAMujJW4diQwCgYIKoZIzj0EAwIw
@@ -29,6 +30,7 @@ certtool --certificate-info --infile ca.crt --outder --outfile ca.der
 
 ### Certificate Authority Secret Key
 
+This key is contained in `ca.key`.
 ```
 -----BEGIN EC PRIVATE KEY-----
 MHgCAQEEIQCTkdqaGrni3qj8I+zeAZOX6ZF0H6tEye/HxXeH1+6dP6AKBggqhkjO
@@ -44,6 +46,7 @@ certtool --generate-privkey --ecc --outfile ca.key
 
 ## Alice's End-Entity Certificate
 
+This certificate is contained in `alice.crt`.
 ```
 -----BEGIN CERTIFICATE-----
 MIIBqTCCAVCgAwIBAgIUTjAZVIQpook9BLjtuhQ7j30XsnYwCgYIKoZIzj0EAwIw
@@ -69,6 +72,7 @@ certtool --certificate-info --infile alice.crt --outder --outfile alice.der
 
 ### Alice's Private Key Material
 
+This key is contained in `alice.key`.
 ```
 -----BEGIN EC PRIVATE KEY-----
 MHgCAQEEIQDUIETrLNJpHpJtpIcc81Kd3sawNPgkul4FDSxwL5fHpaAKBggqhkjO
