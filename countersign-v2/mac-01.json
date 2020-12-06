@@ -1,0 +1,62 @@
+{
+   "title":"MAC-01: MAC message w/ one counter signature version 2",
+   "input":{
+      "plaintext":"This is the content.",
+      "mac":{
+         "alg":"HS256",
+         "protected":{
+            "alg":"HS256"
+         },
+         "recipients":[
+            {
+               "unprotected":{
+                  "alg":"direct",
+                  "kid":"our-secret"
+               },
+               "key":{
+                  "kty":"oct",
+                  "kid":"our-secret",
+                  "use":"enc",
+                  "k":"hJtXIZ2uSN5kbQfbtTNWbpdmhkV8FJG-Onbc6mxCcYg"
+               }
+            }
+         ],
+         "countersign":{
+             "signers":[
+                 {
+                     "key":{
+                         "kty":"OKP",
+                         "kid":"11",
+                         "crv":"Ed25519",
+                         "x_hex":"d75a980182b10ab7d54bfed3c964073a0ee172f3daa62325af021a68f707511a",
+                         "d_hex":"9d61b19deffd5a60ba844af492ec2cc44449c5697b326919703bac031cae7f60"
+                     },
+                     "unprotected":{
+                         "kid":"11"
+                     },
+                     "protected":{
+                         "alg":"EdDSA"
+                     }
+                 }
+             ]
+         }
+      }
+   },
+   "intermediates":{
+      "ToMac_hex":"84634D414343A101054054546869732069732074686520636F6E74656E742E",
+      "CEK_hex":"849B57219DAE48DE646D07DBB533566E976686457C1491BE3A76DCEA6C427188",
+      "recipients":[
+         {
+         }
+      ],
+      "countersigners":[
+         {
+            "ToBeSign_hex":"8572436F756E7465725369676E6174757265563243A1010543A101274054546869732069732074686520636F6E74656E742E"
+         }
+      ]
+   },
+   "output":{
+      "cbor_diag":"97([h'A10105', {11: [h'A10127', {4: h'3131'}, h'21C1023F8A57CE8B47B04755295788383603162231256F8D53CB655DF158EE63BF7C51FE5657F9E9CBBD6758EEAD7EBA8CE3E4061620E523A1B1B3AC0F8C3206']}, h'546869732069732074686520636F6E74656E742E', h'2BDCC89F058216B8A208DDC6D8B54AA91F48BD63484986565105C9AD5A6682F6', [[h'', {1: -6, 4: h'6F75722D736563726574'}, h'']]])",
+      "cbor":"D8618543A10105A10B8343A10127A104423131584021C1023F8A57CE8B47B04755295788383603162231256F8D53CB655DF158EE63BF7C51FE5657F9E9CBBD6758EEAD7EBA8CE3E4061620E523A1B1B3AC0F8C320654546869732069732074686520636F6E74656E742E58202BDCC89F058216B8A208DDC6D8B54AA91F48BD63484986565105C9AD5A6682F6818340A20125044A6F75722D73656372657440"
+   }
+}
