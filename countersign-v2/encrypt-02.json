@@ -1,0 +1,49 @@
+{
+   "title":"Encrypt-02 - Encrypt0 w/ one abbreviated countersignature",
+   "input":{
+      "plaintext":"This is the content.",
+      "encrypted":{
+         "protected":{
+            "alg":"A128GCM"
+         },
+         "recipients":[
+            {
+               "key":{
+                  "kty":"oct",
+                  "kid":"our-secret",
+                  "use":"enc",
+                  "k":"hJtXIZ2uSN5kbQfbtTNWbg"
+               },
+               "unprotected":{
+                  "alg":"direct",
+                  "kid":"our-secret"
+               }
+            }
+         ],
+         "countersign":{
+             "signers":[
+                 {
+                     "key":{
+                         "kty":"OKP",
+                         "kid":"11",
+                         "crv":"Ed25519",
+                         "x_hex":"d75a980182b10ab7d54bfed3c964073a0ee172f3daa62325af021a68f707511a",
+                         "d_hex":"9d61b19deffd5a60ba844af492ec2cc44449c5697b326919703bac031cae7f60"
+                     }
+                 }
+             ]
+         }
+      }
+   },
+   "intermediates":{
+      "countersigners":[
+         {
+            "ToBeSign_hex":"8471436F756E7465725369676E61747572653043A1010140582460973A94BB2898009EE52ECFD9AB1DD25867374B162E2C03568B41F57C3CC16F9166250A"
+         }
+      ]
+   },
+   "output":{
+      "cbor_diag":"16([h'A10101', {5: h'02D1F7E6F26C43D4868D87CE', 12: h'EC5F5ABAE69A2FB6C373F31D95280533B775A9BE5B72E526558FF64C825B0A7E112BB2B691D1ADF912F9C1E46D3DAC5B22C4F70272AECB6090A8EAA086441B03'}, h'60973A94BB2898009EE52ECFD9AB1DD25867374B162E2C03568B41F57C3CC16F9166250A'])",
+      "cbor":"D08343A10101A2054C02D1F7E6F26C43D4868D87CE0C5840EC5F5ABAE69A2FB6C373F31D95280533B775A9BE5B72E526558FF64C825B0A7E112BB2B691D1ADF912F9C1E46D3DAC5B22C4F70272AECB6090A8EAA086441B03582460973A94BB2898009EE52ECFD9AB1DD25867374B162E2C03568B41F57C3CC16F9166250A"
+   }
+}
