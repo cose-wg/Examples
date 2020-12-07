@@ -35,6 +35,11 @@ As time and the spec progresses, it is expected that we will start looking at ad
 
 * CWT - Contains the examples from draft-ace-cwt
 
+* countersign - Contains examples related to the original, deprecated CounterSignature from RFC8152.
+
+* countersign1 - Contains examples related to the original, deprecated CounterSignature0 from RFC8152.
+
+* countersign-v2 - Contains examples related to CounterSignatureV2 and CounterSignature0V2 defined in draft-ietf-cose-countersign.  These examples use the following proposed code points: CounterSignatureV2 (11) and CounterSignature0V2 (12).  The examples will be updated if IANA assigns different values.
 
 # Random number generation
 
