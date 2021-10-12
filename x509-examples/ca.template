@@ -1,0 +1,5 @@
+cn = "Sample COSE Certificate Authority"
+expiration_days = 12000
+ca
+cert_signing_key
+crl_signing_key
