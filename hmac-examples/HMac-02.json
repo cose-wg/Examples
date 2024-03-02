@@ -16,7 +16,7 @@
                "key":{
                   "kty":"oct",
                   "kid":"sec-48",
-                  "use":"enc",
+                  "use":"sig",
                   "k":"hJtXIZ2uSN5kbQfbtTNWbpdmhkV8FJG-Onbc6mxCcYgAESIzd4iZqiEiIyQlJico"
                }
             }

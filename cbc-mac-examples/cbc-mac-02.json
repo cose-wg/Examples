@@ -16,7 +16,7 @@
                "key":{
                   "kty":"oct",
                   "kid":"our-secret",
-                  "use":"enc",
+                  "use":"sig",
                   "k":"hJtXIZ2uSN5kbQfbtTNWbg"
                }
             }
