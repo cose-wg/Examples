@@ -1,0 +1,56 @@
+{
+   "title":"MAC0-02: MAC0 message w/ one abbreviated countersignature version 2",
+   "input":{
+      "plaintext":"This is the content.",
+      "mac0":{
+         "alg":"HS256",
+         "protected":{
+            "alg":"HS256"
+         },
+         "recipients":[
+            {
+               "unprotected":{
+                  "alg":"direct",
+                  "kid":"our-secret"
+               },
+               "key":{
+                  "kty":"oct",
+                  "kid":"our-secret",
+                  "use":"enc",
+                  "k":"hJtXIZ2uSN5kbQfbtTNWbpdmhkV8FJG-Onbc6mxCcYg"
+               }
+            }
+         ],
+         "countersign":{
+             "signers":[
+                 {
+                     "key":{
+                         "kty":"OKP",
+                         "kid":"11",
+                         "crv":"Ed25519",
+                         "x_hex":"d75a980182b10ab7d54bfed3c964073a0ee172f3daa62325af021a68f707511a",
+                         "d_hex":"9d61b19deffd5a60ba844af492ec2cc44449c5697b326919703bac031cae7f60"
+                     }
+                 }
+             ]
+         }
+      }
+   },
+   "intermediates":{
+      "ToMac_hex":"84644D41433043A101054054546869732069732074686520636F6E74656E742E",
+      "CEK_hex":"849B57219DAE48DE646D07DBB533566E976686457C1491BE3A76DCEA6C427188",
+      "recipients":[
+         {
+         }
+      ],
+      "countersigners":[
+         {
+            "ToBeSign_hex":"8573436f756e7465725369676e617475726530563243a101054054546869732069732074686520636f6e74656e742e815820a1a848d3471f9d61ee49018d244c824772f223ad4f935293f1789fc3a08d8c58"
+         }
+      ]
+   },
+   "output":{
+      "cbor_diag":"17([h'A10105', {12: h'CDD419F4D5DCEE999C16F30D3BFA07921D3E55B92E272D65DB07176EE4425CC255833A728C4FBA731ABF97192B4AD0F231E8397EF3024A56B9C5E9EAE3767E0A'}, h'546869732069732074686520636F6E74656E742E', h'A1A848D3471F9D61EE49018D244C824772F223AD4F935293F1789FC3A08D8C58'])",
+      "cbor":"D18443A10105A10C5840CDD419F4D5DCEE999C16F30D3BFA07921D3E55B92E272D65DB07176EE4425CC255833A728C4FBA731ABF97192B4AD0F231E8397EF3024A56B9C5E9EAE3767E0A54546869732069732074686520636F6E74656E742E5820A1A848D3471F9D61EE49018D244C824772F223AD4F935293F1789FC3A08D8C58"
+   }
+}
